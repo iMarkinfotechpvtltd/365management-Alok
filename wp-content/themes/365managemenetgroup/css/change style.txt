@@ -1,0 +1,14 @@
+.menu-open .active a {color: #ddb258;}
+.menu-open .active a span {background-color: #ddb258; bottom: -1px; content: ""; height: 2px; position: absolute; width: 100%; transition: all 0.2s ease; -moz-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; right: 0;}
+
+
+.footer-menu li {
+    border-left: 1px solid;
+    display: inline-block;
+    line-height: 13px;
+    text-align: center;
+    vertical-align: top;
+}
+.footer-menu li:first-child {
+    border-left: none;
+}
