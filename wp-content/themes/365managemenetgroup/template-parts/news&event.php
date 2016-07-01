@@ -68,9 +68,9 @@ get_header(); ?>
                     <h4><?php the_time('d . m . Y'); ?></h4>
                     <?php the_content(); ?>
                         <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
+                        <li><?php echo do_shortcode('[wp_ulike]'); ?></li>
                         <!--<li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>-->
-                        <li><a href=""><?php echo do_shortcode('[addtoany]'); ?> <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                        <li><?php echo do_shortcode('[addtoany]'); ?></li>
                         </ul>
                     </div>
                 </div>

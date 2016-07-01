@@ -614,8 +614,26 @@ add_image_size( 'fifth-image', 460, 268 );
 add_image_size( 'sixth-image', 460, 489 );
 
 
+/***************************logo login*****************************/
+
+function custom_loginlogo() {
+echo '<style type="text/css">
+.login h1 a { background-size: auto 100% !important;;}
+h1 a {background-image: url('.get_bloginfo('template_directory').'/images/logo.png) !important; }
+</style>';
+}
+add_action('login_head', 'custom_loginlogo');
+
+function my_login_logo_url() {
+   return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+   return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
-
-
+/*******name validation***********/
 

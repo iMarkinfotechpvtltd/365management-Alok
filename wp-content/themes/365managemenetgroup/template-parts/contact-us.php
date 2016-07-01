@@ -9,7 +9,24 @@
 
 get_header(); ?>
 
-
+<script type="text/javascript">
+           jQuery(function () {
+               jQuery("input[name='name']").keydown(function (e) {
+                   if (jQuery.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1) {
+                       // let it happen, don't do anything
+                       return;
+                   }
+                   if (e.ctrlKey || e.altKey) {
+                       e.preventDefault();
+                   } else {
+                       var key = e.keyCode;
+                       if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+                           e.preventDefault();
+                       }
+                   }
+               });
+           });
+</script>
 <!--===================== Contact Page Section ==================================-->   
     <section class="artist-content">
     <div class="container">
@@ -149,7 +166,6 @@ $(document).ready(function(){
 	});
 });
 })(jQuery);
-</script>		
-
+</script>
 <?php
 get_footer();

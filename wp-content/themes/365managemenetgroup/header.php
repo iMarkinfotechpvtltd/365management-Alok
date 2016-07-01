@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/scrol.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+   <!-- <link rel="stylesheet" href="<?php// echo get_template_directory_uri(); ?>/scrol.css">-->
 </head>
 
 <body>
@@ -59,7 +59,7 @@
                 </ul>
               </div>               
                <div class="menu">
-                   <a href="#" class="see-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                   <a href="javascript:void(0)" class="see-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
                    <div  class="menu-open">
                    <ul>
 				   <?php 

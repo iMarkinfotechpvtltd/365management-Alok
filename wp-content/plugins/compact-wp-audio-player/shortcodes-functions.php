@@ -17,7 +17,7 @@ function sc_embed_player_handler($atts, $content = null) {
         'loops' => '',
                     ), $atts));
     if (empty($fileurl)) {
-        return '<div style="color:red;font-weight:bold;">Compact Audio Player Error! You must enter the mp3 file URL via the "fileurl" parameter in this shortcode. Please check the documentation and correct the mistake.</div>';
+        return '<div class="error-button"></div>';
     }
     if (empty($volume)) {
         $volume = '80';

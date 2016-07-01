@@ -72,7 +72,7 @@ transition: all 0.9s ease;
     -o-transition: all 0.9s ease;}
 
 .brand {text-align: center; width: 100%;}
-.brand .logo {display: inline-block; margin-top: -93px; margin-bottom: 13px;}
+.brand .logo {display: inline-block; margin-top: -93px; margin-bottom: 13px; position: relative; z-index: 99;}
 
 
 .carousel .container {position: absolute; top: -50%; z-index: 9; top: 50%; min-height: 600px; left: 0; right: 0; transform: translateY(-50%);
@@ -170,6 +170,18 @@ transition: all 0.9s ease;
 }
 .news-content ul {margin: 33px 0 23px;}
 .news-content li:nth-child(2){border-left: 1px solid #afafaf; /*border-top:0; border-bottom:0;*/ line-height: 8px;}
+
+.news-content li .wpulike .counter a{background-color: transparent; border: 0; font-size: 15px; font-family: 'Work Sans', sans-serif !important; transition: all 0.4s ease; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease; color: #afafaf;}
+
+.news-content li .addtoany_shortcode .a2a_kit{ color: #afafaf; transition: all 0.4s ease; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease;}
+.news-content li .addtoany_shortcode .a2a_kit:after{content: "\f1e0"; font-family: FontAwesome;  color: #afafaf; transition: all 0.4s ease; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease;}
+
+.news-content li .addtoany_shortcode .a2a_kit:hover{ color: #ffb10a;}
+
+
+
+.news-content li .wpulike .counter a:hover{color:#ffb10a; text-shadow: none;}
+
 .news-content li a {
     color: #afafaf;
     font-size: 15px;
@@ -193,6 +205,7 @@ transition: all 0.9s ease;
 .img-hold {
     position: relative;
     border: 1px solid #c4c4c4;
+    margin:  0 auto 30px auto;
 }
 .img-hold::after {
     border: 3px solid transparent;
@@ -285,6 +298,14 @@ transition: all 0.9s ease;
 	font-size:14px;
 	text-shadow:1px 1px 1px hsla(0,0%,0%,.75);
     top: 40%;
+}
+
+.mosaicflow__item .icon-mid img{
+    -webkit-filter:brightness(1);
+    -moz-filter:brightness(1);
+    -ms-filter:brightness(1);
+    -o-filter:brightness(1);
+    filter:brightness(1);
 }
 
 
@@ -416,7 +437,7 @@ transition: all 0.9s ease;
     font-size: 27px;
     text-transform: uppercase !important;
     border-radius:0; font-weight: 400 !important;
-    padding: 10px 40px !important;
+    padding: 14px 40px !important;
     border: 2px solid #d3a953 !important;
     transition: all 0.3s ease; -moz-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; margin-left: 30px; width: 254px;}
 
@@ -430,7 +451,7 @@ transition: all 0.9s ease;
 
 
 .form-section .wpcf7-not-valid{border-color: #f00 !important; }
-.form-section .wpcf7-not-valid-tip{display: none;}
+/*.form-section .wpcf7-not-valid-tip{display: none;}*/
 .form-section input[type="submit"]{ font-family: "Work Sans",sans-serif !important;}
 
 /*============================================== Contact Page ==============================================*/
@@ -456,6 +477,45 @@ transition: all 0.9s ease;
     text-align: center;
 }
 
+
+
+
+
+.file-set-management {
+    background-color: #fff;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.file-set-management > span {
+    background-color: #fff;
+    display: block;
+    float: left;
+    line-height: 29px;
+    padding: 15px 0;
+    position: relative;
+    width: 130px;
+    z-index: 9;
+    color: #969696;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.file-set-management .wpcf7-form-control-wrap.file {
+    margin-left: -88px;
+    margin-top: 15px;
+    max-width: 100%;
+    width: 280px !important;
+    padding: 0;
+    position: relative;
+    width: auto;
+    z-index: 8;
+    color: #333;
+}
+
+.file-set-management .wpcf7-form-control-wrap.file input{cursor:pointer;}
 
 
 /*============================================== Career Page ==============================================*/
@@ -592,6 +652,11 @@ transition: all 0.9s ease;
     text-align: center;
     width: 50px;
 }
+.music-btn .sc_player_container1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 4px;
+}
 .music-btn a {
     display: block;
     padding: 6px 0 1px 0;
@@ -603,6 +668,16 @@ transition: all 0.9s ease;
     background-color: #ddb258;
     color: #fff;
 }
+
+.music-btn .error-button {
+    background-image: url("../images/error.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 50px;
+    width: 50px;
+}
+
 
 /*============================================== Library Page ==============================================*/
 
@@ -691,6 +766,16 @@ transition: all 0.9s ease;
  .career-page-content {
     margin-top: 34px;
 }
+    
+.file-set-management > span {
+    padding: 10px 0;
+}
+
+.file-set-management .wpcf7-form-control-wrap.file {
+    margin-top: 10px;
+}
+    
+.frm-btns{padding: 11px 40px !important;}
 /*============================================== Career Page ==============================================*/ 
     
 /*============================================== News Page ==============================================*/    
@@ -747,3 +832,171 @@ transition: all 0.9s ease;
 /*============================================== About Page ==============================================*/
 }
 
+
+
+
+
+@media screen and (max-width:1199px) {
+/*================================== About Page ==================================*/
+.about-img {
+   margin: 0 auto;
+   max-height: 500px;
+   max-width: 500px;
+   float:none;
+}
+.about-content::before, .guitar{display:none;}
+
+.about-content {
+    margin-right: auto;
+    margin-top: 0;
+    max-height: auto;
+    min-height: auto;
+    width: 100%;
+    padding: 30px;
+    margin-top: 10px;
+}
+/*================================== About Page ==================================*/
+    
+/*================================== Career Page ==================================*/
+    
+.file-set-management .wpcf7-form-control-wrap.file {
+    margin-left: -88px;
+    margin-top: 15px;
+}
+
+/*================================== Career Page ==================================*/    
+
+
+@media screen and (max-width:991px) {
+input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
+    display: inline;
+    margin: 30px auto;
+    clear: both;
+    width: 95%;
+}    
+    
+    
+.art-hold .img-responsive img {
+    width: 100%;
+}
+.sub-head-artist {
+    margin-top: 5px;
+}
+.sub-head-artist a {
+    font-size: 16px !important;
+}
+
+    
+.library-content ul li .name {
+  display: inline-block;
+  margin: 15px 19px;
+  max-height: 19px;
+  max-width: 260px;
+  overflow: hidden;
+  vertical-align: top;
+}
+}
+
+
+
+@media screen and (max-width:767px) {
+.top-head{padding-top:10px; font-size:14px;}
+.header-phone {float: left; display: block; width: 100%;}
+.social {float: left; display: block; width: 100%;}
+.social ul{margin-left: 0;}
+
+.brand .logo {margin-top: -33px; width: 70px;}
+
+    
+.menu-open {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0 !important;
+    overflow: hidden;
+    padding-right: 15px;
+    padding-top: 150px !important;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: -50px !important;
+    transition: all 0.5s ease 0s;
+    width: 0;
+    z-index: 98;
+    height: auto;
+    width:180px;
+    right: -180px;
+}
+.show {
+    transition: all 0.9s ease 0s;
+    right:0 ;
+    height: auto;
+}
+.menu-open ul {
+    display: inline-block;
+    float: right;
+    margin-top: 7px;
+    width: 130px;
+}
+.menu-open li {
+    margin: 0 0 7px;
+}
+.menu-open a.active span {
+   bottom: -3px;
+}
+
+/*================================== Career Page ==================================*/        
+    .career-b4{display: none;}
+/*================================== Career Page ==================================*/        
+    
+    
+    
+    
+    
+.folio .mosaicflow .mosaicflow__column{width: 50% !important;}
+.mosaicflow__item {padding: 10px !important;}
+
+    
+    
+    
+    
+    
+    
+/*================================== About Page ==================================*/    
+.about-page-content{ padding: 15px;}
+/*================================== About Page ==================================*/    
+
+    
+    
+/*================================== Music Page ==================================*/       
+    .library-img{width:auto; margin-bottom: 15px;}
+/*================================== Music Page ==================================*/    
+    
+    
+    
+.gen-heading {
+    font-size: 30px;
+}    
+    
+}
+
+    
+@media screen and (max-width:480px) {    
+.sub-head-artist {
+    line-height: 10px;
+    margin-top: 5px;
+}
+.sub-head-artist a{font-size: 14px;}
+
+    
+.folio .mosaicflow .mosaicflow__column{width: 100% !important;}
+.mosaicflow__item {padding: 5px 10px !important;}
+
+    
+.library-content ul li .name{max-width: 200px;}
+    
+    
+input.wpcf7-form-control.wpcf7-submit.btn.frm-btns{width: 92%; margin: 30px 15px;}    
+.file-set-management .wpcf7-form-control-wrap.file{width: 200px !important;}
+ 
+.cap-code.set-form {margin: 0 15px; width: 92%;}    
+    
+}
