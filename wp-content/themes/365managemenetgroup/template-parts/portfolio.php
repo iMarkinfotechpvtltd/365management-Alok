@@ -87,7 +87,7 @@ get_header(); ?>
 		</div>
 
 		<div class="mosaicflow__item">
-			 <a href="<?php the_field('sixth_image_link',30); ?>">
+			 <a target="_blank" href="<?php the_field('sixth_image_link',30); ?>">
 		     <?php
                $sixth=get_post_meta(30,"sixth_image",true);
                $thumb = wp_get_attachment_image_src($sixth, 'sixth-image' );?>

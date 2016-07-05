@@ -43,7 +43,7 @@
             <li><a href="career.html">Careers</a></li>      |     
             <li><a href="contact.html">Contact Us</a></li>-->
         </ul>
-           <p class="copy-rgt"><?php echo get_option_tree('copy_right'); ?> Powered by <a href="http://www.imarkinfotech.com/" target="_blank">iMark <span>I</span>nfotech</a></p>
+           <p class="copy-rgt">© <?php the_time("Y") ; ?> <?php echo get_option_tree('copy_right'); ?> Powered by <a href="http://www.imarkinfotech.com/" target="_blank">iMark <span>I</span>nfotech</a></p>
         </div>
     </footer>
 	<?php wp_footer(); ?>

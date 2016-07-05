@@ -24,6 +24,8 @@ ol li, ul li{list-style-type: none;}
 ul{padding: 0;}
 a:hover, a:focus, a:visited, input:focus, input:visited{text-decoration: none; outline:none;}
 
+.wpcf7-form-control.wpcf7-submit.btn.frm-btns:focus {outline: none;}
+
 .main-header{background-image:url(../images/header-bg.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; display: inline-block; background-color: #111111;}
 
 .top-head{padding-top: 21px; display: inline-block; width: 100%; font-size: 15px;}
@@ -41,6 +43,8 @@ a:hover, a:focus, a:visited, input:focus, input:visited{text-decoration: none; o
 
 .menu {display: inline-block; width: 100%; position: relative;}
 .see-menu{position: relative; z-index: 99; float: right; margin-top: 36px;}
+.act i {color: #ddb258 !important;}
+
 
 .menu-open {height: 0; position: absolute; top: 0; width: 160px; text-align: center; overflow: hidden; z-index: 98; right:0; margin-top: 50px;
     transition: all 0.5s ease;
@@ -73,6 +77,36 @@ transition: all 0.9s ease;
 
 .brand {text-align: center; width: 100%;}
 .brand .logo {display: inline-block; margin-top: -93px; margin-bottom: 13px; position: relative; z-index: 99;}
+
+.custom-links img {
+    height: 25px;
+    width: 25px;
+}
+.custom-links a {
+    background-color: #ddb258;
+    border-radius: 25px;
+    color: black;
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 10px;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.custom-links > ul {
+    margin: 0;
+}
+.custom-links a:hover {
+    width: 150px;
+}
+.custom-links {
+    display: inline-block;
+    margin-top: -100px;
+    position: absolute;
+}
+
 
 
 .carousel .container {position: absolute; top: -50%; z-index: 9; top: 50%; min-height: 600px; left: 0; right: 0; transform: translateY(-50%);
@@ -174,7 +208,12 @@ transition: all 0.9s ease;
 .news-content li .wpulike .counter a{background-color: transparent; border: 0; font-size: 15px; font-family: 'Work Sans', sans-serif !important; transition: all 0.4s ease; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease; color: #afafaf;}
 
 .news-content li .addtoany_shortcode .a2a_kit{ color: #afafaf; transition: all 0.4s ease; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease;}
-.news-content li .addtoany_shortcode .a2a_kit:after{content: "\f1e0"; font-family: FontAwesome;  color: #afafaf; transition: all 0.4s ease; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease;}
+.news-content li .addtoany_shortcode .a2a_kit:after{color: #afafaf; content: "\f1e0"; font-family: FontAwesome; position: relative; top: 2px; transition: all 0.4s ease; -moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease;}
+
+    
+    
+
+
 
 .news-content li .addtoany_shortcode .a2a_kit:hover{ color: #ffb10a;}
 
@@ -194,6 +233,12 @@ transition: all 0.9s ease;
 #events {
     margin-top: 27px;
 }
+
+
+
+/*.count-box {
+    display: none !important;
+}*/
 /*============================================== News Page ==============================================*/
 
 
@@ -504,7 +549,7 @@ transition: all 0.9s ease;
 }
 
 .file-set-management .wpcf7-form-control-wrap.file {
-    margin-left: -88px;
+    /*margin-left: -88px;*/
     margin-top: 15px;
     max-width: 100%;
     width: 280px !important;
@@ -655,7 +700,7 @@ transition: all 0.9s ease;
 .music-btn .sc_player_container1 {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 .music-btn a {
     display: block;
@@ -679,6 +724,25 @@ transition: all 0.9s ease;
 }
 
 
+
+
+div.wpcf7-validation-errors {
+    border: 2px solid #c00;
+    left: 15px;
+    margin-top: 40px;
+    position: absolute;
+    right: 15px;
+}
+
+form{position: relative;}
+div.wpcf7-spam-blocked {
+    border: 2px solid #f00;
+    bottom: -70px;
+    left: 0;
+    margin: 40px auto auto;
+    position: absolute;
+    right: 0;
+}
 /*============================================== Library Page ==============================================*/
 
 
@@ -830,6 +894,9 @@ transition: all 0.9s ease;
 
 
 /*============================================== About Page ==============================================*/
+ .music-btn .sc_player_container1 {
+    margin-top: 9px;
+}
 }
 
 
@@ -855,25 +922,52 @@ transition: all 0.9s ease;
     padding: 30px;
     margin-top: 10px;
 }
+
+.about-page-content {
+    margin-top: 40px;
+}
+
 /*================================== About Page ==================================*/
     
 /*================================== Career Page ==================================*/
     
 .file-set-management .wpcf7-form-control-wrap.file {
-    margin-left: -88px;
+    /*margin-left: -88px;*/
     margin-top: 15px;
 }
 
+    
+    
 /*================================== Career Page ==================================*/    
 
+    @media screen and (min-width:991px) and (max-width:1199px){
+     
+.contact-address li span {
+    height: 40px;
+    width: 40px;
+}
+.contact-address li:first-child em {
+    line-height: 20px; max-width: 200px;
+}
 
+.contact-address li em {
+    font-size: 13px;
+    padding-left: 15px;
+}  
+        
+    }
+
+    
+    
+    
 @media screen and (max-width:991px) {
 input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
-    display: inline;
+    display: block;
     margin: 30px auto;
     clear: both;
-    width: 95%;
-}    
+    width: 96%;
+}  
+.cap-code{margin: 0 0 45px 15px;}
     
     
 .art-hold .img-responsive img {
@@ -895,6 +989,17 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
   overflow: hidden;
   vertical-align: top;
 }
+    
+.footer-menu li a{font-size: 14px;}   
+    
+    
+div.wpcf7-validation-errors {
+    border: 2px solid #f7e700;
+    left: 15px;
+    margin-top: -10px;
+    position: absolute;
+    right: 15px;
+}    
 }
 
 
@@ -943,6 +1048,31 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
    bottom: -3px;
 }
 
+    
+    
+    
+.right.carousel-control span, .left.carousel-control span  {
+  height: 15px;
+  width: 15px;
+}
+.right.carousel-control span::before, .left.carousel-control span::before {
+  width: 20px;
+}
+.right.carousel-control span::after, .left.carousel-control span::after {
+  width: 20px;
+}
+.carousel-control{margin-top:0;}
+    
+    
+.footer-menu {
+    margin: 0 auto;
+}
+.footer-menu li a {
+  font-size: 13px;
+  margin: 5px 8px;
+}
+    
+    
 /*================================== Career Page ==================================*/        
     .career-b4{display: none;}
 /*================================== Career Page ==================================*/        
@@ -951,8 +1081,11 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
     
     
     
-.folio .mosaicflow .mosaicflow__column{width: 50% !important;}
-.mosaicflow__item {padding: 10px !important;}
+/*.folio .mosaicflow .mosaicflow__column{width: 50% !important;}
+.mosaicflow__item {padding: 10px !important;}*/
+    
+.folio .mosaicflow .mosaicflow__column{width: 100% !important;}
+.mosaicflow__item {padding: 5px 10px !important;}
 
     
     
@@ -976,6 +1109,18 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
     font-size: 30px;
 }    
     
+    .cap-code{margin-bottom:45px;}    
+input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
+    display: block;
+    margin: 30px auto 10px;
+    width: 95%;
+}    
+    
+div.wpcf7 img.ajax-loader {
+    display: block;
+    margin: 4px auto;
+ }    
+    
 }
 
     
@@ -984,14 +1129,14 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
     line-height: 10px;
     margin-top: 5px;
 }
-.sub-head-artist a{font-size: 14px;}
+.sub-head-artist a{font-size: 14px !important; line-height: 16px;}
 
     
-.folio .mosaicflow .mosaicflow__column{width: 100% !important;}
-.mosaicflow__item {padding: 5px 10px !important;}
 
-    
-.library-content ul li .name{max-width: 200px;}
+
+.library-content ul li .num{margin: 15px 0; width:40px;}    
+.library-content ul li .name{max-width: 160px; margin: 16px 14px;}
+
     
     
 input.wpcf7-form-control.wpcf7-submit.btn.frm-btns{width: 92%; margin: 30px 15px;}    
@@ -999,4 +1144,18 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns{width: 92%; margin: 30px 15px
  
 .cap-code.set-form {margin: 0 15px; width: 92%;}    
     
+    
+    
+
+.contact-address li span {height: 40px; width: 40px; font-size:auto;}
+.contact-address li:first-child em {line-height: 20px;}
+.contact-address li em {font-size: 12px; padding-left: 15px;}
+    
+    
 }
+    
+
+@media screen and (max-width:390px) {    
+input.wpcf7-form-control.wpcf7-submit.btn.frm-btns{width: 90%; margin: 30px 15px;}    
+.file-set-management .wpcf7-form-control-wrap.file{width: 200px !important;}
+.cap-code.set-form {margin: 0 15px; width: 90%;}     
