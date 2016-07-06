@@ -80,7 +80,9 @@ transition: all 0.9s ease;
 
 
 
-.custom-links{max-width: 320px;}
+.custom-links{width: 250px; position: absolute; top:60px; height:150px;}
+.custom-links .owl-buttons {display: none;} 
+
 /*.custom-links img {
     height: 25px;
     width: 25px;
@@ -121,7 +123,7 @@ transition: all 0.9s ease;
 }
 .custom-links {
     display: inline-block;
-    margin-top: -130px;
+    /*margin-top: -130px;*/
     position: absolute;
 }
 
