@@ -10,10 +10,7 @@
 get_header(); ?>
 
 <!--========================== Owl ==========================-->
-   <script src="<?php echo get_template_directory_uri(); ?>/owl-carousel/owl.carousel.js"></script>
-   <link rel="stylesheet" href="http://exibirhost.com.br/supplypaper/front/css/owl.carousel.css">
-  <!-- <link rel="stylesheet" href="http://exibirhost.com.br/supplypaper/front/css/owl.transitions.css">-->
-   <link rel="stylesheet" href="http://exibirhost.com.br/supplypaper/front/css/owl.theme.css">
+
     <script>
     jQuery(document).ready(function() {
 

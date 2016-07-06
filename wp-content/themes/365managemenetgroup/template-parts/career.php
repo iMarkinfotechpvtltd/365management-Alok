@@ -55,37 +55,16 @@ get_header(); ?>
     <div class="container">
         <p><?php the_field('contact_uper_text',16); ?> </p>
         <div class="row">
-        <?php echo do_shortcode('[contact-form-7 id="45" title="Carrers form"]'); ?>
-       <!---- <form class="form-inline">
-    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12 set-form">
-      <input type="text" class="form-control" placeholder="Name:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name:'">
-    </div>
-    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12 set-form">
-      <input type="email" class="form-control" placeholder="Email:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email:'">
-    </div>
-    
-    <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12 set-form">
-      <input type="text" class="form-control" placeholder="Phone:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone:'">
-    </div>
-    
-            
-    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 set-form">
-      <textarea placeholder="Message:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message:'"></textarea>
-    </div>
-            
-            <div class="cap-code form-group set-form">
-            <input type="file" class="form-control" placeholder="Phone:" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone:'">
-        </div>
-        <div class="cap-code">
-            <img src="<?php //echo get_template_directory_uri(); ?>/images/cap-code.jpg" alt="" class="img-responsive" />
-        </div>
-        <button type="button" class="btn frm-btns">Upload</button>
-    <button type="submit" class="btn frm-btns">Submit</button>
-  </form>-->    
-              
+        <?php echo do_shortcode('[contact-form-7 id="45" title="Carrers form"]'); ?>        
     </div>
     </section>
 <!--===================== Contact Form Section ==================================-->   
-
+<script>
+jQuery(function() {                       //run when the DOM is ready
+  jQuery(".wpcf7-submit").click(function() {  //use a class, since your ID gets mangled
+    jQuery(this).addClass("err");      //add the class to the clicked element
+  });
+});
+</script>
 <?php
 get_footer();

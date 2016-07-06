@@ -26,7 +26,7 @@ get_header(); ?>
         <?php while ( have_posts() ) : the_post(); ?>
         <?php the_content();?>
         <?php endwhile;?>
-        <ul>
+        <ul class="library-d">
 		<?php	
 		$args = array('post_type' => 'library','posts_per_page'=>'-1','order'=>'DESC');
 		$i=1;
@@ -35,12 +35,49 @@ get_header(); ?>
         <?php 
 		$music = get_field('track');
 		?>
-            <li><span class="num"><?php echo $i; ?></span> <span class="name"><?php the_title(); ?></span> <div class="music-btn"><?php echo do_shortcode( '[sc_embed_player fileurl="'.$music.'"]' );?><!--<a href=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>--></div></li>
+            <li><span class="num"><?php echo $i; ?></span> <span class="name">
+			<?php 
+                $title  = the_title('','',false);
+                  if(strlen($title) > 45):
+                     echo trim(substr($title, 0, 40)).'...';
+                  else:
+                    echo $title;
+                  endif;?>
+                  </span> <div class="music-btn"><?php echo do_shortcode( '[sc_embed_player fileurl="'.$music.'"]' );?></div></li>
+             <?php
+		     $i++;
+		     endwhile; ?> 
+        </ul>    
+        
+        
+        
+         <ul class="library-p">
+		<?php	
+		$args = array('post_type' => 'library','posts_per_page'=>'-1','order'=>'DESC');
+		$i=1;
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <?php 
+		$music = get_field('track');
+		?>
+            <li><span class="num"><?php echo $i; ?></span> <span class="name">
+
+                <?php 
+                   $title  = the_title('','',false);
+                  if(strlen($title) > 20):
+                    echo trim(substr($title, 0, 16)).'...';
+                  else:
+                   echo $title;
+                 endif; ?>
+
+            </span> <div class="music-btn"><?php echo do_shortcode( '[sc_embed_player fileurl="'.$music.'"]' );?></div></li>
         <?php
 		$i++;
 		endwhile; ?> 
-        </ul>    
-        </div>
+        </ul> 
+        
+        
+       </div>
         
     
         

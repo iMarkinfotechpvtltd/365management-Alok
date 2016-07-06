@@ -28,7 +28,7 @@ get_header(); ?>
                                           
                               $small_image_url1 = wp_get_attachment_image_src($val1, 'indi-image');
                               ?>
-			<div class="col-lg-4 col-md-4 col-sm-3 col-xs-6">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
                     <div class="img-hold">
                       <img src="<?php echo $small_image_url1[0]; ?>" alt="image"/>
                     </div>
@@ -36,20 +36,6 @@ get_header(); ?>
 			<?php }
 			endwhile; 
             wp_reset_query(); ?> 
-        
-        
-       <!--<div class="col-lg-4 col-md-4 col-sm-3 col-xs-6">
-            <div class="img-hold">
-                <img src="images/individ-artist02.jpg" alt="artist name" class="img-responsive" />
-            </div>
-        </div>
-            
-            
-        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6">
-            <div class="img-hold">
-                <img src="images/individ-artist03.jpg" alt="artist name" class="img-responsive" />
-            </div>
-        </div>-->
             
         </div>
        
@@ -75,9 +61,18 @@ get_header(); ?>
 				 </li>
             <li>
 				 <?php
-				 $din=get_option_tree('linkedin');
-				 if($din==""){}else { ?>
-				 <a target="_blank" href="<?php echo $din; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a><?php }?>
+				 $spo=get_option_tree('spotify');
+				 if($spo==""){}else { ?>
+				 <a target="_blank" href="<?php echo $spo; ?>"><i class="fa fa-spotify" aria-hidden="true"></i>
+</a><?php }?>
+				 </li>
+
+ <li>
+				 <?php
+				 $sound=get_option_tree('soundcloud');
+				 if($sound==""){}else { ?>
+				 <a target="_blank" href="<?php echo $sound; ?>"><i class="fa fa-soundcloud" aria-hidden="true"></i>
+</a><?php }?>
 				 </li>
             </ul>
             <p><?php the_field('about_us'); ?></p>

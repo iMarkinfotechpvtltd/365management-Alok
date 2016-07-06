@@ -35,13 +35,6 @@
                    );
 
                 wp_nav_menu( $defaults ); ?>
-           <!-- <li><a href="index.html">Home</a></li>      |     
-            <li><a href="#">About Us</a></li>      |     
-            <li><a href="artist.html">Artists</a></li>      |     
-            <li><a href="portfolio.html">Portfolio</a></li>      |     
-            <li><a href="news.html">News & Events</a></li>      |     
-            <li><a href="career.html">Careers</a></li>      |     
-            <li><a href="contact.html">Contact Us</a></li>-->
         </ul>
            <p class="copy-rgt">© <?php the_time("Y") ; ?> <?php echo get_option_tree('copy_right'); ?> Powered by <a href="http://www.imarkinfotech.com/" target="_blank">iMark <span>I</span>nfotech</a></p>
         </div>
@@ -56,10 +49,13 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mosaicflow.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/owl-carousel/owl.carousel.js"></script>
+
     
     <script>
    jQuery(document).ready(function(){
     jQuery(".see-menu").click(function(){
+   jQuery(this).toggleClass("act");
        jQuery(".menu-open").toggleClass("show");
     });
 });
@@ -102,5 +98,27 @@
     });
 });
  </script>
+ 
+ <script>
+   jQuery(document).ready(function() {
+     jQuery("#slide-head").owlCarousel({
+         
+         itemsCustom: [
+[320, 1],
+[480, 1], 
+[992, 1],
+[1200, 1],
+[1500, 1]],
+         
+
+     navigation : true,
+     slideSpeed : 300,
+     paginationSpeed : 400,
+     singleItem : true
+
+     });
+   });
+   </script>
+
 </body>
 </html>

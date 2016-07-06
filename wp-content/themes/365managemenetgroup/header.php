@@ -15,7 +15,6 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>365 Management</title>
     <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/images/fav.png">
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -23,6 +22,9 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" href="http://exibirhost.com.br/supplypaper/front/css/owl.carousel.css">
+  <!-- <link rel="stylesheet" href="http://exibirhost.com.br/supplypaper/front/css/owl.transitions.css">-->
+    <link rel="stylesheet" href="http://exibirhost.com.br/supplypaper/front/css/owl.theme.css">
    <!-- <link rel="stylesheet" href="<?php// echo get_template_directory_uri(); ?>/scrol.css">-->
 </head>
 
@@ -83,19 +85,29 @@
                    );
 
                 wp_nav_menu( $defaults ); ?>
-                      <!-- <li><a href="index.html" class="active">Home<span></span></a></li>
-                       <li><a href="#">About<span></span></a></li>
-                       <li><a href="artist.html">Artist<span></span></a></li>
-                       <li><a href="portfolio.html">Portfolio<span></span></a></li>
-                       <li><a href="news.html">News & Events<span></span></a></li>
-                       <li><a href="career.html">Careers<span></span></a></li>
-                       <li><a href="contact.html">Contact Us<span></span></a></li>-->
                    </ul>
                    </div>
                </div>
                <div class="brand">
                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_option_tree('logo'); ?>" alt="logo" /></a>
                </div>
+			   
+			  <div class="custom-links">
+       
+         <div class="row">
+           <div class="span12">
+             <div id="slide-head" class="owl-carousel">
+
+               <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/fullimage1.jpg" alt="The Last of us"></a></div>
+               <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/fullimage2.jpg" alt="GTA V"></a></div>
+               <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/fullimage3.jpg" alt="Mirror Edge"></a></div>
+
+             </div>
+           </div>
+         </div>
+       
+       </div>
+			   
             </div>
                
         </div>

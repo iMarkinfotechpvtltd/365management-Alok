@@ -368,22 +368,23 @@ require get_template_directory() . '/inc/customizer.php';
  *                      values in pixels (in that order).
  * @return string A source size value for use in a content image 'sizes' attribute.
  */
-function twentysixteen_content_image_sizes_attr( $sizes, $size ) {
-	$width = $size[0];
-
-	840 <= $width && $sizes = '(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px';
-
-	if ( 'page' === get_post_type() ) {
-		840 > $width && $sizes = '(max-width: ' . $width . 'px) 85vw, ' . $width . 'px';
-	} else {
-		840 > $width && 600 <= $width && $sizes = '(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px';
-		600 > $width && $sizes = '(max-width: ' . $width . 'px) 85vw, ' . $width . 'px';
-	}
-
-	return $sizes;
-}
-add_filter( 'wp_calculate_image_sizes', 'twentysixteen_content_image_sizes_attr', 10 , 2 );
-
+ /********************************************slider problem***********************************/
+//function twentysixteen_content_image_sizes_attr( $sizes, $size ) {
+//	$width = $size[0];
+//
+//	840 <= $width && $sizes = '(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px';
+//
+//	if ( 'page' === get_post_type() ) {
+//		840 > $width && $sizes = '(max-width: ' . $width . 'px) 85vw, ' . $width . 'px';
+//	} else {
+//		840 > $width && 600 <= $width && $sizes = '(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px';
+//		600 > $width && $sizes = '(max-width: ' . $width . 'px) 85vw, ' . $width . 'px';
+//	}
+//
+//	return $sizes;
+//}
+//add_filter( 'wp_calculate_image_sizes', 'twentysixteen_content_image_sizes_attr', 10 , 2 );
+/************************************************************slider**************************************/
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
  * for post thumbnails
@@ -470,7 +471,7 @@ function Slider_init() {
 	register_post_type( 'Slider', $args );
 }
 
-add_image_size( 'slider-image', 1920, 840 );
+
 /****************************Library post*********************/
 add_action( 'init', 'Library_init' );
 function Library_init() {
@@ -551,7 +552,7 @@ function News_init() {
 	register_post_type( 'News', $args );
 }
 
-add_image_size( 'news-image', 460, 297 );
+
 
 /****************************Artist post*****************************/
 add_action( 'init', 'Artists_init' );
@@ -591,7 +592,7 @@ function Artists_init() {
 
 	register_post_type( 'Artists', $args );
 }
-
+/****************** image size***************/
 add_image_size( 'artists-image', 339, 365 );
 
 add_image_size( 'indi-image', 460, 428 );
@@ -604,6 +605,9 @@ add_image_size( 'about-second-image', 976, 323 );
 
 add_image_size( 'library-image', 583, 797 );
 
+add_image_size( 'news-image', 460, 297 );
+
+add_image_size( 'slider-image', 1920, 840, true );
 
 /******************portfolio image size***************/
 add_image_size( 'first-image', 460, 358 );
@@ -634,6 +638,4 @@ function my_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
-
-/*******name validation***********/
 

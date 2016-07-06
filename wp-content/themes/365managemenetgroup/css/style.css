@@ -78,32 +78,50 @@ transition: all 0.9s ease;
 .brand {text-align: center; width: 100%;}
 .brand .logo {display: inline-block; margin-top: -93px; margin-bottom: 13px; position: relative; z-index: 99;}
 
-.custom-links img {
+
+
+.custom-links{max-width: 320px;}
+/*.custom-links img {
     height: 25px;
     width: 25px;
 }
-.custom-links a {
+/*.custom-links a {
     background-color: #ddb258;
     border-radius: 25px;
     color: black;
     display: inline-block;
+    height: 30px;
+    line-height: 28px;
     overflow: hidden;
-    padding-right: 10px;
-    transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-}
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 2px;
+    transition: all 0.5s ease 0s;-webkit-transition: all 0.5s ease 0s;
+    width: 30px;
+}*/
 .custom-links > ul {
     margin: 0;
 }
+.custom-links > ul li{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+.custom-links > ul li:last-child{margin-right: 0;}
+.custom-links span {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    top: -2px !important;
+    width: 25px;
+}
 .custom-links a:hover {
+    color: #000;
     width: 150px;
 }
 .custom-links {
     display: inline-block;
-    margin-top: -100px;
+    margin-top: -130px;
     position: absolute;
 }
 
@@ -894,9 +912,7 @@ div.wpcf7-spam-blocked {
 
 
 /*============================================== About Page ==============================================*/
- .music-btn .sc_player_container1 {
-    margin-top: 9px;
-}
+
 }
 
 
@@ -938,7 +954,12 @@ div.wpcf7-spam-blocked {
 
     
     
-/*================================== Career Page ==================================*/    
+/*================================== Career Page ==================================*/  
+    
+ .music-btn .sc_player_container1 {
+    margin-top: 9px;
+}
+}
 
     @media screen and (min-width:991px) and (max-width:1199px){
      
@@ -994,7 +1015,7 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
     
     
 div.wpcf7-validation-errors {
-    border: 2px solid #f7e700;
+    border: 2px solid #c00;
     left: 15px;
     margin-top: -10px;
     position: absolute;

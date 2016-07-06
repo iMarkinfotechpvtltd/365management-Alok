@@ -76,3 +76,13 @@ div.wpcf7 div.ajax-error {
 div.wpcf7 .placeheld {
 	color: #888;
 }
+
+
+span.wpcf7-not-valid-tip {
+    color: #f00;
+    display: block;
+    font-size: 10px;
+    left: 10px;
+    position: absolute;
+    top: 4px;
+}
