@@ -483,7 +483,7 @@ function Library_init() {
 		'add_new'            => _x( 'Add New', 'Librarys', 'your-plugin-textdomain' ),
 		'add_new_item'       => __( 'Add New Librarys', 'your-plugin-textdomain' ),
 		'new_item'           => __( 'New Librarys', 'your-plugin-textdomain' ),
-		'edit_item'          => __( 'Edit PLibrarys', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Librarys', 'your-plugin-textdomain' ),
 		'view_item'          => __( 'View Librarys', 'your-plugin-textdomain' ),
 		'all_items'          => __( 'All Librarys', 'your-plugin-textdomain' ),
 		'search_items'       => __( 'Search Librarys', 'your-plugin-textdomain' ),
@@ -609,6 +609,8 @@ add_image_size( 'news-image', 460, 297 );
 
 add_image_size( 'slider-image', 1920, 840, true );
 
+add_image_size( 'header-slider', 370, 215 );
+
 /******************portfolio image size***************/
 add_image_size( 'first-image', 460, 358 );
 add_image_size( 'second-image', 460, 416 );
@@ -639,3 +641,42 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
+/************************header slider******************************/
+
+add_action( 'init', 'Header_slider_init' );
+function Header_slider_init() {
+	$labels = array(
+		'name'               => _x( 'Sliders', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Sliders', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Header Slider', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Slides', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add New', 'Slides', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Slide', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Slides', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Slides', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Slides', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Slides', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Slides', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Slides:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No Slides found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No Slides found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+                'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'hslider' ),
+		'Header_slider_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'thumbnail')
+	);
+
+	register_post_type( 'Header_slider', $args );
+}

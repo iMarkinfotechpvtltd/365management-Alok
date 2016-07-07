@@ -97,11 +97,25 @@
          <div class="row">
            <div class="span12">
              <div id="slide-head" class="owl-carousel">
-
-               <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/fullimage1.jpg" alt="The Last of us"></a></div>
-               <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/fullimage2.jpg" alt="GTA V"></a></div>
-               <div class="item"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/fullimage3.jpg" alt="Mirror Edge"></a></div>
-
+             
+             <?php 
+                 query_posts(array( 
+                'post_type' => 'Header_slider',
+                'showposts' => 5,
+				'order'=>'DESC'
+               ) );  
+             ?>
+             <?php while (have_posts()) : the_post(); ?>
+               <div class="item"><a target="_blank" href="<?php the_field('link_for_image',$post->ID); ?>"><?php if ( has_post_thumbnail() ) {
+                  the_post_thumbnail('header-slider');
+                  } else { ?>
+                 <img src="http://placehold.it/370x215&amp;text=No image found" alt="<?php the_title(); ?>"/>
+                 <?php } ?><span><?php the_content(); ?></span></a></div>
+			   
+           <?php
+		   endwhile;
+		   wp_reset_query();
+		   ?>
              </div>
            </div>
          </div>

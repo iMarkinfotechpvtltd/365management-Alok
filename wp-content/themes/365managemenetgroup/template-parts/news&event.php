@@ -71,122 +71,12 @@ get_header(); ?>
                         </ul>
                     </div>
                 </div>
-                
-               <!-- <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php// echo get_template_directory_uri(); ?>/images/news02.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php// echo get_template_directory_uri(); ?>/images/news03.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                  
-                <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php// echo get_template_directory_uri(); ?>/images/news01.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php// echo get_template_directory_uri(); ?>/images/news02.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php// echo get_template_directory_uri(); ?>/images/news03.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                  
-                <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php// echo get_template_directory_uri(); ?>/images/news01.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php// echo get_template_directory_uri(); ?>/images/news02.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="item">
-                    <a href=""><div class="img-holder"><img src="<?php //echo get_template_directory_uri(); ?>/images/news03.jpg" alt="news" class="img-responsive" /></div></a>
-                    <div class="news-content"><h3><a href="">Lorem ipsum dolor sit amet, adipiscing elit</a></h3>
-                    <h4>04 . 06 . 2016</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <ul>
-                        <li><a href="">Like <i class="fa fa-thumbs-up" aria-hidden="true"></i></a></li>
-                        <li><a href="">Comments <i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                        <li><a href="">Share <i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>-->
             <?php endwhile; ?>
               </div>
             </div>
 
     </div>
 
-
-
-    
-        
-        
-        
     </div>
     </section>
 <!--===================== Artist Page Section ==================================-->  

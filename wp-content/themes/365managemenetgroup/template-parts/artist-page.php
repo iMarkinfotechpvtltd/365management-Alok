@@ -31,39 +31,6 @@ get_header(); ?>
         </div>
          <?php endwhile; ?>   
         </div>
-		
-       <!-- <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 artist-cat">
-            <div class="art-hold">
-                <a href=""><img src="<?php// echo get_template_directory_uri(); ?>/images/artist05.jpg" alt="artist name" class="img-responsive" /><span class="hov-bar"></span></a>
-            </div>
-            <h3 class="sub-head-artist"><a href="">Lorem ipsum dolor</a></h3>
-        </div>
-        
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 artist-cat">
-            <div class="art-hold">
-                <a href=""><img src="<?php //echo get_template_directory_uri(); ?>/images/artist04.jpg" alt="artist name" class="img-responsive" /><span class="hov-bar"></span></a>
-            </div>
-            <h3 class="sub-head-artist"><a href="">Lorem ipsum dolor</a></h3>
-        </div>
-            
-            
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 artist-cat">
-            <div class="art-hold">
-                <a href=""><img src="<?php// echo get_template_directory_uri(); ?>/images/artist01.jpg" alt="artist name" class="img-responsive" /><span class="hov-bar"></span></a>
-            </div>
-            <h3 class="sub-head-artist"><a href="">Lorem ipsum dolor</a></h3>
-        </div>
-            
-            
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 artist-cat">
-            <div class="art-hold">
-                <a href=""><img src="<?php// echo get_template_directory_uri(); ?>/images/artist02.jpg" alt="artist name" class="img-responsive" /><span class="hov-bar"></span></a>
-            </div>
-            <h3 class="sub-head-artist"><a href="">Lorem ipsum dolor</a></h3>
-        </div>
-            
-        </div>-->
     </div>
     </section>
 <!--===================== Artist Page Section ==================================-->   

@@ -109,7 +109,7 @@ transition: all 0.9s ease;
     float: left;
     margin-right: 10px;
 }
-.custom-links > ul li:last-child{margin-right: 0;}
+/*.custom-links > ul li:last-child{margin-right: 0;}
 .custom-links span {
     display: inline-block;
     height: 25px;
@@ -120,11 +120,23 @@ transition: all 0.9s ease;
 .custom-links a:hover {
     color: #000;
     width: 150px;
-}
+}*/
 .custom-links {
     display: inline-block;
     /*margin-top: -130px;*/
     position: absolute;
+}
+
+
+.custom-links a  {position:relative;}
+.custom-links a span {
+  display: inline-block;
+  position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 
@@ -159,6 +171,9 @@ transition: all 0.9s ease;
 }
 .footer-menu li a{color: #c4c4c4; font-size: 16px; margin: 0 15px; transition: all 0.3s ease; -moz-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease;}
 .footer-menu li a:hover{color:#dab66e;}
+.footer-menu .current_page_item a {
+  color: #ddb258;
+}
 .copy-rgt {font-size: 12px; margin-top: 32px;}
 .copy-rgt a{color:#26a9e0; text-decoration: underline; transition: all 0.3s ease; -moz-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; font-family:GothamLight;}
 .copy-rgt a span{font-family:GoudyOldStyleT-Regular;}
@@ -647,6 +662,12 @@ transition: all 0.9s ease;
 
 
 /*============================================== Library Page ==============================================*/
+.library-p {
+  display: none;
+}
+
+
+
 .library-page-content {
     margin-top: 50px;
 }
@@ -954,6 +975,12 @@ div.wpcf7-spam-blocked {
     margin-top: 15px;
 }
 
+.career .container {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    z-index: 99;
+    position: relative;
+}    
     
     
 /*================================== Career Page ==================================*/  
@@ -1008,7 +1035,7 @@ input.wpcf7-form-control.wpcf7-submit.btn.frm-btns {
   display: inline-block;
   margin: 15px 19px;
   max-height: 19px;
-  max-width: 260px;
+  max-width: 250px;
   overflow: hidden;
   vertical-align: top;
 }
@@ -1098,6 +1125,8 @@ div.wpcf7-validation-errors {
     
 /*================================== Career Page ==================================*/        
     .career-b4{display: none;}
+    
+    .career .container {background-color: transparent; color: #333;}
 /*================================== Career Page ==================================*/        
     
     
@@ -1124,6 +1153,9 @@ div.wpcf7-validation-errors {
     
 /*================================== Music Page ==================================*/       
     .library-img{width:auto; margin-bottom: 15px;}
+    
+    .library-d {display: none;}
+    .library-p {display: block;}
 /*================================== Music Page ==================================*/    
     
     
